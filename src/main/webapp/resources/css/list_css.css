@@ -1,0 +1,74 @@
+body{
+    margin:30px;
+    background-color: rgb(169, 207, 243);
+    color:white;
+}
+#title{
+    text-align: center;
+    margin-bottom:10px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: white;
+    color:rgb(49, 171, 219);
+}
+br{
+    background-color: white;
+}
+.outer{
+    margin-bottom:10px;
+    padding:10px;
+    background-color: white;
+    color:rgb(49, 171, 219);
+}
+table{
+    text-align:center;
+    border-style: none;
+    width:100%;
+    border-collapse: collapse;
+}
+.texts{
+	text-align:left;
+}
+th, td{
+    border-style: none;
+    padding:7px;
+}
+th{
+    background-color:rgb(159, 214, 238);
+    color:white;
+}
+.colored{
+	background-color:rgb(159, 214, 238);
+	color:white;
+}
+
+#table th{
+    font-weight: bold;
+}
+input, textarea{
+    margin-bottom: 10px;
+}
+.pages{
+	background-color: white;
+    color:rgb(49, 171, 219);
+    padding:5px;
+    text-decoration:none;
+}
+.pages:hover{
+	color:white;
+    background-color:rgb(49, 171, 219);
+}
+
+#btn_submit{
+    background-color: white;
+    border:1px solid rgb(49, 171, 219);
+    color:rgb(49, 171, 219);
+    padding:5px;
+    cursor:pointer;
+    
+}
+#btn_submit:hover{
+    color:white;
+    background-color:rgb(49, 171, 219);
+
+}
