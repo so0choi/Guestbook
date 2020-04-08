@@ -48,13 +48,13 @@ th{
 input, textarea{
     margin-bottom: 10px;
 }
-.pages{
+#pages a{
 	background-color: white;
     color:rgb(49, 171, 219);
     padding:5px;
     text-decoration:none;
 }
-.pages:hover{
+#pages a:hover{
 	color:white;
     background-color:rgb(49, 171, 219);
 }
