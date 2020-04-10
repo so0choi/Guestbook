@@ -28,9 +28,9 @@
 			<c:forEach items="${list }" var="guestbook">
 				<%
 					i++;
-					String type = "nocolor";
-					if (i % 2 == 0)
-						type = "colored";
+						String type = "nocolor";
+						if (i % 2 == 0)
+							type = "colored";
 				%>
 				<tr class=<%=type%>>
 					<td>${guestbook.id }</td>
@@ -42,11 +42,11 @@
 		</table>
 		<br>
 		<div id="pages">
-		<% int j=0; %>
-		<c:forEach items="${pageStartList}" var="pageIndex" varStatus="status">
-			<a href="list?start=${pageIndex}">${status.index +1 }</a>
+			<c:forEach items="${pageStartList}" var="pageIndex"
+				varStatus="status">
+				<a href="list?start=${pageIndex}">${status.index +1 }</a>
 
-		</c:forEach>
+			</c:forEach>
 		</div>
 	</div>
 	<div class="outer">
@@ -60,5 +60,12 @@
 		</form>
 	</div>
 </body>
-
+<script> 
+	var pages = document.querySelectorAll("a");
+	pages.forEach(function(e){
+		if((parseInt(e.text)-1)*5===${start}){
+			e.style.fontWeight="bold";
+		}
+	});
+</script>
 </html>

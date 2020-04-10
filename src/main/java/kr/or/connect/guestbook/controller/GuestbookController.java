@@ -45,6 +45,7 @@ public class GuestbookController {
 		model.addAttribute("list", list);
 		model.addAttribute("count", count);
 		model.addAttribute("pageStartList", pageStartList);
+		model.addAttribute("start", start);
 
 		return "list";
 	}
@@ -52,7 +53,6 @@ public class GuestbookController {
 	@PostMapping(path = "/write")
 	public String write(@ModelAttribute Guestbook guestbook, HttpServletRequest request) {
 		String clientIp = request.getRemoteAddr();
-		System.out.println("clientIp : " + clientIp);
 		guestbookService.addGuestbook(guestbook, clientIp);
 		return "redirect:list";
 	}
